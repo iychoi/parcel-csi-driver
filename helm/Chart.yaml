@@ -1,0 +1,19 @@
+apiVersion: v2
+appVersion: "0.1.0"
+name: parcel-csi-driver
+description: A Helm chart for Parcel CSI Driver
+version: 0.1.0
+kubeVersion: ">=1.14.0-0"
+home: https://github.com/iychoi/parcel-csi-driver
+sources:
+  - https://github.com/iychoi/parcel-csi-driver
+keywords:
+  - parcel
+  - irods
+  - cyverse
+  - csi
+  - public datasets
+  - scientific datasets
+  - data commons
+maintainers:
+  - name: "Illyoung Choi"
