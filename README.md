@@ -27,13 +27,7 @@ Parameters are given via Persistent Volume (PV).
 | client | Client type | "irodsfuse" |
 | user | iRODS user id | "irods_user" |
 | password | iRODS user password | "password" in plane text |
-| host | iRODS hostname | "data.cyverse.org" |
-| port | iRODS port | Optional, Default "1247" |
-| ticket | Ticket string | Optional |
-| zone | iRODS zone | "iplant" |
-| path | iRODS path to mount, does not include **zone** in string | "/home/irods_user" |
-
-Mounts **zone**/**path**
+| url | URL | "irods://data.cyverse.org/iplant/home/irods_user" |
 
 Any parameters can be supplied via secrets (using `nodeStageSecretRef`).
 
@@ -44,8 +38,6 @@ Any parameters can be supplied via secrets (using `nodeStageSecretRef`).
 | user | WebDAV user id | "webdav_user" |
 | password | WebDAV user password | "password" in plane text |
 | url | URL | "https://data.cyverse.org/dav/iplant/home/irods_user" |
-
-Mounts **url**
 
 Any parameters can be supplied via secrets (using `nodeStageSecretRef`).
 
